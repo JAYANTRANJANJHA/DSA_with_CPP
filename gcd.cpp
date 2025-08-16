@@ -21,9 +21,17 @@ int gcd(int a, int b)
     return a;
 }
 
+int lcm(int a,int b){
+    int gcdforlcm=gcd(a,b);
+    return(a*b)/gcdforlcm;
+
+}
+
 int main()
 {
     cout<<"GCD is : "<<gcd(20,28)<<endl;
+    cout<<"LCM is : "<<lcm(20,40)<<endl;
+
 
     return 0;
 }
