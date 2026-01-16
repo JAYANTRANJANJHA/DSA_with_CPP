@@ -21,9 +21,20 @@ int fact_rec(int n){
 return n* fact_rec(n-1);
 }
 
+int nums_sum_rec(int n){
+
+  if(n==1){
+    return 1;
+  }
+
+
+return n+nums_sum_rec(n-1);
+
+}
+
 int main(){
 
 
-cout<<fact_rec(5)<<endl;
+cout<<nums_sum_rec(10)<<endl;
   return 0;
 }
