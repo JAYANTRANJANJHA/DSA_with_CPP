@@ -12,8 +12,18 @@ void printNums(int n){
   printNums(n-1);
 }
 
+int fact_rec(int n){
+  if(n==0){
+    return 1;
+
+  }
+
+return n* fact_rec(n-1);
+}
+
 int main(){
 
-printNums(5);
+
+cout<<fact_rec(5)<<endl;
   return 0;
 }
