@@ -32,9 +32,21 @@ return n+nums_sum_rec(n-1);
 
 }
 
+int fibo_rec(int n){ 
+if(n==0){
+  return 0;
+}
+if(n==1){
+  return 1;
+}
+
+  return fibo_rec(n-1)+fibo_rec(n-2);
+
+}
+
 int main(){
 
 
-cout<<nums_sum_rec(10)<<endl;
-  return 0;
+cout<<fibo_rec(3)<<endl;
+  return 0; 
 }
