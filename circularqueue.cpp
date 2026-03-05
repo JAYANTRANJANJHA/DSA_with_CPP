@@ -73,7 +73,17 @@ int main(){
   cq.pop();
   cq.push(4);
   cq.printArray();
-  cout<<cq.front();
+ 
+
+  while(!cq.empty()){
+    cout<<cq.front()<<" ";
+    cq.pop();
+
+  }
+
+  cout<<endl;
+
+   cout<<cq.front();
 
 
 
