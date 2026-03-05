@@ -1,1 +1,1 @@
-cout<<t2.dept<<endl;
+idx=-1;
